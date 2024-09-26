@@ -1,21 +1,23 @@
+import java.util.Scanner;
+
 public class Tugas2 {
-    public static double hitungLuas (int sisi) {
-        return sisi*sisi;
+    public static double hitungLuas(int sisi){
+        return sisi * sisi;
     }
     public static double hitungLuas(int panjang, int lebar){
-        return panjang*lebar;
+        return panjang * lebar;
     }
-    public static double hitungLuas(int jarijari, double pi){
-        return pi*jarijari*jarijari;
+    public static double hitungLuas(int jariJari, double Pi){
+        return Pi * jariJari * jariJari;
     }
-    public static double hitungKeliling (int sisi){
-        return sisi*4;
+    public static double hitungKeliling(int sisi){
+        return sisi * 4;
     }
-    public static double hitungKeliling (int panjang, int lebar){
-        return 2* (panjang + lebar);
+    public static double hitungKeliling(int panjang, int lebar){
+        return 2 * (panjang + lebar);
     }
-    public static double hitungKeliling (int jarijari, double pi){
-        return 2*pi*jarijari;
+    public static double hitungKeliling(int jariJari, double Pi){
+        return 2 * Pi * jariJari;
     }
     public static void pilihJenisBangunDatar(){
         Scanner input = new Scanner(System.in);
@@ -38,7 +40,7 @@ public class Tugas2 {
                 int jariJari = input.nextInt();
                 System.out.println("Luas lingkaran : " + hitungLuas(jariJari,Math.PI) + "\n" + "Keliling lingkaran : " + hitungKeliling(jariJari,Math.PI));
                 break;
-            }
+             }
         }
         public static void main(String[] args) {
         System.out.println("Masukan bangun datar : \n");
@@ -47,5 +49,4 @@ public class Tugas2 {
         System.out.print("3.Lingkaran\nMasukan pilihan : ");
         pilihJenisBangunDatar();
     }
-
 }
